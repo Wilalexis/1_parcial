@@ -1,0 +1,86 @@
+<! Doctype HTML>
+<html>
+    <head>
+        <title>Html 5 y CSS</title>
+<LINK href="estilos.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+       <header class="estilo_bloque">
+           <img class="img-circulo" src="img/foto_perfil.jpg">
+           <p>Wilmer Martínez</p>
+           
+           <nav> <!-- Menu tipo Navegador -->
+            <p id="tam">
+                <a href="Inicio.html">Inicio</a> |
+                <a href="php.html">Php</a> |
+                <a href="Net.html">.Net</a> |
+                <a href="Java.html">Java</a> |
+            </p>
+            </nav>
+
+       </header>
+       
+       <figure align="justify">
+		<h3>Lenguajes de Programación</h3>
+			<ol type="1" start="1"> 
+				<li >Paginas Web</li>
+					<ul class="vi2"> 
+						<li>Jsp</li>
+						<li>Aspx</li>
+                        <li>Php</li>
+					</ul>
+				<li>Aplicaciones</li>
+					<ul class="vi1" type="circle">
+						<li>Java</li>
+						<li>Visual Basic</li>
+						<li>C#</li>
+					</ul>
+		</figure>
+		<figure>
+       
+       
+       
+       
+       <div class="estilo_bloque">
+           <table>
+               <tr><td colspan="2">Programacion Web</td></tr>
+               <tr><td>Asp</td><td>Jsp</td></tr>
+               <tr><td>Php</td><td>Ruby</td></tr>
+               <tr><td>Python</td><td>Go</td></tr>
+           </table>
+       </div>
+       <div class="estilo_bloque">
+            <form>
+      <input type="text" id="txt_nombre"  placeholder="Ingrese Nombres" required>
+      <input type="text"  id="txt_apellidos" placeholder="Ingrese Apellidos" required>
+      <input type="number" id="txt_telefono" placeholder="Ingrese Numero Telefonico" required>
+      <input type="email" id="txt_correo" placeholder="Ingrese Correo Electronico" required>
+      <input type="date" id="txt_fn" placeholder="Ingrese Fecha Nacimiento" required>
+      <textarea id="txt_mensaje" placeholder="Ingrese el Mensaje"></textarea>
+    <input type="submit" class="boton" onclick="enviar()">       
+    </form>
+       </div>
+       <div class="estilo_bloque" id="redes_sociales" >
+        <h3>Redes Sociales</h3>
+        <a href="#"><img src="img/facebook.png"></a>
+        <a href="#"><img src="img/twitter.png"></a>
+       </div>
+    </body>
+    <footer>
+            <p align=center>Aprende a Programar Fácil y Rápido &copy;</p>
+    </footer>
+
+    <script>
+        function enviar(){
+            var nombre= document.getElementById(txt_nombre).value;
+            var apellido = document.getElementById(txt_apellidos).value;
+            var telefono = document.getElementById(txt_telefono).value;
+            var correo = document.getElementById(txt_correo).value;
+            var fecha = document.getElementById(txt_fn).value;
+            var men = document.getElementById(txt_mensaje).value;
+            alert( nombre + ' ' + apellido + ' ' + telefono + ' ' + correo + ' ' + fecha + ' ' + men);
+        }
+    </script>
+
+
+</html>
